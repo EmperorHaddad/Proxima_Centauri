@@ -1,0 +1,13 @@
+/*
+canvas {
+    border:1px solid #170e0e;
+    background-color: #d3d3d3;
+}
+*/
+#gameArea{
+    border: 8px solid purple; /*to see the gameArea's sides*/
+}
+body{
+    /*overflow: hidden; /*hide scrollbars*/
+    background-color: brown; /* to see any hidding things and to identify the 'body'.*/
+}

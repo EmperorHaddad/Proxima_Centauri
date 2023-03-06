@@ -1,0 +1,56 @@
+taken from https://www.w3schools.com/graphics/tryit.asp?filename=trygame_image 
+
+I have found it impossible to insert a image that does so in squence with the 
+other code instead of after so i taken this code and cutting it down to a 
+usable sub-routine for in inserting images onto a canvas.
+
+V1: 
+- remove some code and simplify other in the 'component' class.
+- changed how the startGame() sub-routine is called.
+- remove some code in the 'updateGameArea' sub-routine.
+- removed buttons.
+- removed functions linked to buttons.
+- removed text.
+
+V2: 
+- remove some code in the 'myGameArea' variable.
+- removed some 'this' keywords in the 'component' class.
+- attempted to dismantle 'myGameArea' var - FAILED
+
+- came to to conclusion that adding images (without delay) only works 
+when using the iterative sub-routine '.setInterval'
+- it wasn't...
+
+- made JS use an existing canvas instead of generating one itself
+- swapped colours in CSS
+- replaced 'smilely.gif' with 'grid.png'.
+
+V3:
+- moved CSS to a saperated file.
+- attempted to JS code to another file.
+- replaced CSS code with my CSS code.
+- removed the last parameter of the 'component' class as it was now redundant.
+- removed the 'newPos' method of the 'component' class as it was now redundant.
+- replaced 'this.image' with 'image' in the 'component' class.
+- successfully dismantled the 'myGameArea' var.
+- updateGameArea
+- created 'initialiseCanvas' sub-routine.
+
+- it appears that 'setInterval' in-built sub-routine is essential for the image
+to appear.
+
+- I am now going to attempt to integrate the JS code inside of my own JS code 
+in 'webgame - V,A,3,1'.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="editedReferance.css">
+</head>
+<body>
+<canvas id = "gameArea" width = "544" height="400"></canvas><!--area for the game-->
+<script src="editedReferance.js"></script>
+</body>
+</html> 
