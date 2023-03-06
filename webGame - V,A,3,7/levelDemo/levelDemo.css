@@ -1,0 +1,10 @@
+/*
+#gameArea{
+    border: 8px solid purple; /*to see the gameArea's sides
+}
+*/
+
+body{
+    /*overflow: hidden; /*hide scrollbars*/
+    background-color: brown; /* to see any hidding things and to identify the 'body'.*/
+}
